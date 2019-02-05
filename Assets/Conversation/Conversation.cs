@@ -5,17 +5,23 @@ using System.Collections;
 public class Conversation : MonoBehaviour {
 	[SerializeField]
 	GameObject panel;
+    [SerializeField]
+    Image portrait;
 	[SerializeField]
 	AudioClip[] clips;
 	AudioSource audioSource;
 	bool printText = false;
 	string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in enim nibh. Quisque sed augue ac dolor molestie mattis ut vitae lectus. Suspendisse potenti. Nulla fringilla";
+    [SerializeField]
+    Line[] lines;
+    int lineCount = 0;
 	[SerializeField]
 	bool PrintWordByWord = false;
 	
 	// Use this for initialization
 	void Start () {
 		panel.SetActive(false);
+        //portrait.SetActive(false);
 		audioSource = GetComponent<AudioSource>();
 	}
 	
@@ -27,6 +33,8 @@ public class Conversation : MonoBehaviour {
 					panel.SetActive(false);
 				} else {
 					printText = true;
+                    text = lines[lineCount].line;
+                    portrait.sprite = lines[lineCount].sprite;
 					if(PrintWordByWord)
 						StartCoroutine("PrintTextByWord");										
 					else
@@ -72,6 +80,7 @@ public class Conversation : MonoBehaviour {
 			if(printText)
 				yield return new WaitForSeconds(0.005f);
 		}
+
 		printText = false;
 	}
 

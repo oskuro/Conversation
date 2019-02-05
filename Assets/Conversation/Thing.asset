@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Bob
   line: This is our first test line.
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b9a6545cd64d28e43820962ecf5a0de1, type: 3}
