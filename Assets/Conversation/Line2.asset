@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b12834b375c5b340bbfeb8fb92cddbc, type: 3}
-  m_Name: Thing
+  m_Name: Line2
   m_EditorClassIdentifier: 
-  characterName: Bob
-  line: This is our first test line.
-  sprite: {fileID: 21300000, guid: b9a6545cd64d28e43820962ecf5a0de1, type: 3}
+  characterName: Mary-Sue
+  line: This is our second example line.
+  sprite: {fileID: 21300000, guid: cd59af70c92a2394ba39a20b6d304d46, type: 3}
