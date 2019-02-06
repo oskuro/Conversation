@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Conversation : MonoBehaviour {
 	[SerializeField]
@@ -11,14 +12,14 @@ public class Conversation : MonoBehaviour {
 	AudioClip[] clips;
 	AudioSource audioSource;
 	bool printText = false;
-	string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in enim nibh. Quisque sed augue ac dolor molestie mattis ut vitae lectus. Suspendisse potenti. Nulla fringilla";
-    [SerializeField]
-    Line[] lines;
+	// string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in enim nibh. Quisque sed augue ac dolor molestie mattis ut vitae lectus. Suspendisse potenti. Nulla fringilla";
     int lineCount = 0;
 	[SerializeField]
 	bool PrintWordByWord = false;
     [SerializeField] Text dialogueText;
     [SerializeField] Text nameText;
+
+	string text;
 	// Use this for initialization
 	void Start () {
 		panel.SetActive(false);
@@ -26,32 +27,28 @@ public class Conversation : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.F)) {
-			if(!printText) {
-				if(panel.activeSelf && lineCount == lines.Length) {
-					panel.SetActive(false);
-                    lineCount = 0;
-                }
-                else {
-					printText = true;
-                    text = lines[lineCount].line;
-                    nameText.text = lines[lineCount].characterName;
-                    portrait.sprite = lines[lineCount].sprite;
-					if(PrintWordByWord)
-						StartCoroutine("PrintTextByWord");										
-					else
-						StartCoroutine("PrintTextByCharacter");
-                    lineCount++;
-				}
-				
-			} else {
-				printText = false;
+	public void Play (List<Lines> lines) {
+		if(!printText) {
+			if(panel.activeSelf && lineCount == lines.Count) {
+				panel.SetActive(false);
+				lineCount = 0;
+			}
+			else {
+				Character c = lines[lineCount].character;
+				printText = true;
+				text = lines[lineCount].line;
+				nameText.text = c.characterName;
+				portrait.sprite = c.sprite;
+				if(PrintWordByWord)
+					StartCoroutine("PrintTextByWord");										
+				else
+					StartCoroutine("PrintTextByCharacter");
+				lineCount++;
 			}
 			
-		} 
-
-		
+		} else {
+			printText = false;
+		}
 	}
 
 
