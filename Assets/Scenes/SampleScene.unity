@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -314,8 +314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -111.2, y: 70.1}
-  m_SizeDelta: {x: 80, y: 110}
+  m_AnchoredPosition: {x: -121.1, y: 76}
+  m_SizeDelta: {x: 88, y: 188}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317060077
 MonoBehaviour:
@@ -430,13 +430,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
-    line: Howdy ho cowboy
-  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
-    line: what going down yo
+    line: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
-    line: I told you to bugger off
-  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
-    line: "You two are hilarous\x13"
+    line: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+      ut aliquip ex ea commodo consequat
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur
 --- !u!4 &459769700
 Transform:
   m_ObjectHideFlags: 0

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pap
   m_EditorClassIdentifier: 
   characterName: Pap
-  sprite: {fileID: 21300000, guid: d60b51515c27aec458bced0ac1078aba, type: 3}
+  sprite: {fileID: 21300000, guid: 78327fc40c1bb114e8dffa91d267fefc, type: 3}

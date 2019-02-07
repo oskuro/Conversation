@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bob
   m_EditorClassIdentifier: 
   characterName: Bob
-  sprite: {fileID: 21300000, guid: b9a6545cd64d28e43820962ecf5a0de1, type: 3}
+  sprite: {fileID: 21300000, guid: 63c4fb1c98c9311449f5732a04137a09, type: 3}
