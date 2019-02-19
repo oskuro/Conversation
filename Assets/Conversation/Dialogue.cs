@@ -2,16 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+[CreateAssetMenu]
+public class Dialogue : ScriptableObject
 {
     [SerializeField]
     public List<Lines> lines;
-
-    void Update() {
-        if(Input.GetButtonDown("Fire1")) {
-            GameObject.Find("Conversation").GetComponent<Conversation>().Play(lines);
-        }
-    }
 }
 
 [System.SerializableAttribute]

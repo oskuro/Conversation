@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using Random = UnityEngine.Random;
 
 public class Conversation : MonoBehaviour {
 	[SerializeField]
@@ -12,7 +14,6 @@ public class Conversation : MonoBehaviour {
 	AudioClip[] clips;
 	AudioSource audioSource;
 	bool printText = false;
-	// string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in enim nibh. Quisque sed augue ac dolor molestie mattis ut vitae lectus. Suspendisse potenti. Nulla fringilla";
     int lineCount = 0;
 	[SerializeField]
 	bool PrintWordByWord = false;
@@ -20,14 +21,13 @@ public class Conversation : MonoBehaviour {
     [SerializeField] Text nameText;
 
 	string text;
-	// Use this for initialization
 	void Start () {
 		panel.SetActive(false);
 		audioSource = GetComponent<AudioSource>();
 	}
 	
-	// Update is called once per frame
-	public void Play (List<Lines> lines) {
+	public void PlayDialogue (Dialogue dialogue) {
+        List<Lines> lines = dialogue.lines;
 		if(!printText) {
 			if(panel.activeSelf && lineCount == lines.Count) {
 				panel.SetActive(false);
@@ -38,7 +38,7 @@ public class Conversation : MonoBehaviour {
 				printText = true;
 				text = lines[lineCount].line;
 				nameText.text = c.characterName;
-				portrait.sprite = c.sprite;
+                ShowSprite(c.sprite);
 				if(PrintWordByWord)
 					StartCoroutine("PrintTextByWord");										
 				else
@@ -51,8 +51,20 @@ public class Conversation : MonoBehaviour {
 		}
 	}
 
+    private void ShowSprite(Sprite sprite)
+    {
+        if (sprite == null)
+        {
+            portrait.gameObject.SetActive(false);
+        }
+        else
+        {
+            portrait.gameObject.SetActive(true);
+            portrait.sprite = sprite;
+        }
+    }
 
-	IEnumerator PrintTextByWord() {
+    IEnumerator PrintTextByWord() {
 		string[] words = text.Split(' ');
 		panel.SetActive(true);
 		Text container = panel.GetComponentInChildren<Text>();
