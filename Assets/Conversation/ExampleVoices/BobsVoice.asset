@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8660ecbc4641e947afceddf9b2d2ba3, type: 3}
+  m_Name: BobsVoice
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 438d1144009b2f44080892632c3b8fbd, type: 3}
+  - {fileID: 8300000, guid: 07b42c264b3e95841bae82f073220ed2, type: 3}
+  - {fileID: 8300000, guid: 1ca11bbb1db996e4fb55732182053fe2, type: 3}
+  - {fileID: 8300000, guid: e3f634077a8087440ac80de2bd5f49ec, type: 3}
+  - {fileID: 8300000, guid: 86481744315a042499f81dc6419d3b4a, type: 3}
+  - {fileID: 8300000, guid: 5b58131c93c0de946887b2785a1c30bd, type: 3}
+  - {fileID: 8300000, guid: 41eb193b7b7dcd84d81c0bb8f4384b12, type: 3}
+  - {fileID: 8300000, guid: c41bf542be9ad7049b089106809b5c25, type: 3}
+  - {fileID: 8300000, guid: f2d8672c13464b34781f329fed527745, type: 3}
+  - {fileID: 8300000, guid: 5cdac6328bacfca4d9af31e8fefd5edb, type: 3}

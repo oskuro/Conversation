@@ -18,8 +18,18 @@ public class DialogueInspector : Editor
         // }
 
         if(GUILayout.Button("Add Line")) {
+            Lines line = new Lines();
+            dialogue.lines.Add(line);
+
+            // Try to guess which speaker is next
+            if(dialogue.lines.Count > 1)
+            {
+                int previousSpeaker = dialogue.lines.Count - 3;
+                line.character = dialogue.lines[previousSpeaker].character;
+                Debug.Log(line.character);
+            }
             
-            dialogue.lines.Add(new Lines());
+
             // EditorUtility.SetDirty(dialogue);
             // EditorApplication.MarkSceneDirty();
         }

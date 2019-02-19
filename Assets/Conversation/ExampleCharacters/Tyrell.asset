@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9cd24cc370d2f02e90860d9f8ce227e, type: 3}
-  m_Name: Pap
+  m_Name: Tyrell
   m_EditorClassIdentifier: 
-  characterName: Pap
-  sprite: {fileID: 21300000, guid: 78327fc40c1bb114e8dffa91d267fefc, type: 3}
+  characterName: Tyrell
+  sprite: {fileID: 0}
+  voice: {fileID: 0}

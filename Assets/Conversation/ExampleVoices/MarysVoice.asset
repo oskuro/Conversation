@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8660ecbc4641e947afceddf9b2d2ba3, type: 3}
+  m_Name: MarysVoice
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: d5aebb108f06d6546956750e96fc386d, type: 3}
+  - {fileID: 8300000, guid: bf0160ae763d5844c99ceca85da53ea7, type: 3}
+  - {fileID: 8300000, guid: 64cfd7d1bfe03994dba9fc69ab27e26b, type: 3}
+  - {fileID: 8300000, guid: 08b0d872a4d5df447b3cd4229d487cf7, type: 3}
+  - {fileID: 8300000, guid: c5979967653256444a880a433a2e1b72, type: 3}
+  - {fileID: 8300000, guid: 17634ea4771bfc348b73cf48be8e9bc3, type: 3}
+  - {fileID: 8300000, guid: ed732689d58327f47b2cf21194d18922, type: 3}
+  - {fileID: 8300000, guid: cd797103b4acc3a4681536e2668b631e, type: 3}
+  - {fileID: 8300000, guid: a5b5e72446c06b84b8bb2a85cb14fcc3, type: 3}
+  - {fileID: 8300000, guid: cd72c02e24201164da52a926b7966aea, type: 3}

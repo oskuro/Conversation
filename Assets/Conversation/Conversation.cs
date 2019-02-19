@@ -10,10 +10,11 @@ public class Conversation : MonoBehaviour {
 	GameObject panel;
     [SerializeField]
     Image portrait;
-	[SerializeField]
 	AudioClip[] clips;
+    [SerializeField]
+    AudioClip[] defaultClips;
 	AudioSource audioSource;
-	bool printText = false;
+	bool printingText = false;
     int lineCount = 0;
 	[SerializeField]
 	bool PrintWordByWord = false;
@@ -28,17 +29,20 @@ public class Conversation : MonoBehaviour {
 	
 	public void PlayDialogue (Dialogue dialogue) {
         List<Lines> lines = dialogue.lines;
-		if(!printText) {
+		if(!printingText) {
+            // This happens if we have shown all the lines in the dialogue
 			if(panel.activeSelf && lineCount == lines.Count) {
 				panel.SetActive(false);
 				lineCount = 0;
 			}
 			else {
+                // This happens if the settings are set to printing over time.
 				Character c = lines[lineCount].character;
-				printText = true;
+				printingText = true;
 				text = lines[lineCount].line;
 				nameText.text = c.characterName;
                 ShowSprite(c.sprite);
+                AssignVoice(c.voice);
 				if(PrintWordByWord)
 					StartCoroutine("PrintTextByWord");										
 				else
@@ -47,9 +51,22 @@ public class Conversation : MonoBehaviour {
 			}
 			
 		} else {
-			printText = false;
+            // This happens when the method is called while printing the text. 
+            // is causes the printing to skip to the end immediatly.
+			printingText = false;
 		}
 	}
+
+    private void AssignVoice(Voice voice)
+    {
+        if(voice == null)
+        {
+            clips = defaultClips;
+        } else
+        {
+            clips = voice.clips.ToArray();
+        }
+    }
 
     private void ShowSprite(Sprite sprite)
     {
@@ -74,10 +91,10 @@ public class Conversation : MonoBehaviour {
 			AudioClip clip = clips[Random.Range(0,clips.Length)];
 			audioSource.clip = clip;
 			audioSource.Play();
-			if(printText)
+			if(printingText)
 				yield return new WaitForSeconds(0.1f);
 		}
-		printText = false;
+		printingText = false;
 	}
 
 	IEnumerator PrintTextByCharacter() {
@@ -90,11 +107,11 @@ public class Conversation : MonoBehaviour {
 			AudioClip clip = clips[Random.Range(0,clips.Length/2)];
 			audioSource.clip = clip;
 			audioSource.Play();
-			if(printText)
+			if(printingText)
 				yield return new WaitForSeconds(0.005f);
 		}
 
-		printText = false;
+		printingText = false;
 	}
 
 }

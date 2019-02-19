@@ -21,3 +21,46 @@ MonoBehaviour:
     line: Of course it is.
   - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
     line: Must be expensive.
+  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
+    line: Very. I'm Rachael.
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: Deckard.
+  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
+    line: It seems you feel our work is not of benefit to the public.
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: 'Replicants are like any other machine: they''re either a benefit or a hazard.
+      If they''re a benefit, it''s not my problem.'
+  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
+    line: May I ask you a personal question?
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: Sure.
+  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
+    line: Have you ever retired a human by mistake?
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: No.
+  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
+    line: But in your position that is a risk...
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: Is this to be an empathy test?
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: ' Capillary dilation of the so-called blush response...fluctuation of the
+      pupil...involuntary dilation of the iris.'
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: We call it Voight-Kampff for short.
+  - character: {fileID: 11400000, guid: 2e31ba58c7cf971ddb574f8ef8560cc9, type: 2}
+    line: Mr. Deckard, Dr. Eldon Tyrell.
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: Demonstrate it. I want to see it work.
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: Where's the subject?
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: ' I want to see it work on a person. I want to see a negative before I provide
+      you with a positive.'
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: What's that going to prove?
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: '*smiling* Indulge me.'
+  - character: {fileID: 11400000, guid: 539fa30a457a55c9fb17427e0620a62b, type: 2}
+    line: On you?
+  - character: {fileID: 11400000, guid: f8446cd4c6aaafc79ba9cbc3beecb4c8, type: 2}
+    line: '*Nods* Try her.'

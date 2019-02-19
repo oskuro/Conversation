@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9cd24cc370d2f02e90860d9f8ce227e, type: 3}
-  m_Name: Mary-Sue
+  m_Name: Rachael
   m_EditorClassIdentifier: 
-  characterName: Mary-Sue
-  sprite: {fileID: 21300000, guid: cd59af70c92a2394ba39a20b6d304d46, type: 3}
+  characterName: Rachael
+  sprite: {fileID: 21300000, guid: 78327fc40c1bb114e8dffa91d267fefc, type: 3}
+  voice: {fileID: 11400000, guid: b220e52690723474a97c2fd1f8c31930, type: 2}
